@@ -260,6 +260,193 @@ Attributes:
 |---|---|
 | `v1.0.0` | Initial release — bash + PowerShell telemetry library, user identity, optional CommandFile, truncation, fallback logging, shell injection protection |
 
+####
+# etc
+1.
+Understand this repository first.
+
+Do not explain file by file.
+
+Instead tell me
+
+- What business problem this application solves
+- High level architecture
+- Technologies used
+- Package structure
+- Important modules
+
+
+2.
+Create an architecture document.
+
+Include
+
+- Components
+- Package responsibilities
+- Data flow
+- Layer interactions
+- Design patterns
+- Possible improvements
+
+Generate Architecture.md
+
+3.
+Create a complete inventory.
+
+List
+
+REST APIs
+
+Database Entities
+
+Repositories
+
+Services
+
+Controllers
+
+Relationships between them
+
+Produce the output as tables.
+
+
+Trace the flow when a user creates a new Owner.
+
+Start from UI.
+
+Show every method until the database.
+
+Include
+
+Controller
+
+↓
+
+Service
+
+↓
+
+Repository
+
+↓
+
+Entity
+
+↓
+
+Database
+
+
+#Technical Debt:
+Act as a Staff Software Architect.
+
+Review this repository.
+
+Identify
+
+- Code smells
+
+- Layer violations
+
+- Tight coupling
+
+- Missing abstractions
+
+- Security concerns
+
+- Testing gaps
+
+Prioritize findings.
+
+#Modernization:
+Assume this application needs to support
+
+5 million users
+
+Review the architecture.
+
+Recommend
+
+Scalability improvements
+
+Caching
+
+Messaging
+
+Microservices
+
+Cloud architecture
+
+Database improvements
+
+Observability
+
+Security
+
+#OKF:
+Generate an Open Knowledge Format (OKF) document.
+
+Include
+
+Business capabilities
+
+Architecture
+
+API catalog
+
+Entities
+
+Dependencies
+
+Security
+
+Technology stack
+
+Repository metadata
+
+Output YAML.
+
+Bonus Demo
+
+Now ask questions without referring to specific files.
+
+Which services own Owner management?
+Which APIs update Pet information?
+Which entity has the most relationships?
+Where would caching provide the biggest benefit?
+What is the most critical technical debt?
+Which classes violate SOLID principles?
+
+These feel much more like conversations with an experienced architect than with an autocomplete tool.
+
+Final Demo
+
+Ask Claude:
+
+Create onboarding documentation for a new developer.
+
+The developer has never seen this project.
+
+Explain
+
+Business domain
+
+Architecture
+
+Folder structure
+
+Coding standards
+
+How to debug
+
+Where to start
+
+How to add a feature
+
+Generate README_NEW_DEVELOPER.md
+
+Managers appreciate this because onboarding documentation is a recurring challenge.
+
 ---
 
 ## Contributing
